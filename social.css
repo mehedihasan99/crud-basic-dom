@@ -1,0 +1,70 @@
+.list-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 102, 255);
+}
+
+body {
+  margin: 0 60px;
+}
+
+#post-btn {
+  padding: 12px 35px;
+  text-transform: uppercase;
+  border: none;
+  background-color: coral;
+  color: white;
+  border-radius: 10px;
+}
+
+#post-btn:hover {
+  background-color: rgb(214, 65, 11);
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  background-color: #c0c5b3;
+  border-radius: 10px;
+  padding: 40px;
+  width: 400px;
+  color: rgb(91, 93, 95);
+}
+
+
+#posts div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option {
+  display: flex;
+  gap: 30px;
+}
+
+#err-msg {
+  color: rgb(255, 251, 0);
+
+}
+
+i {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+i:hover {
+  color: rgb(230, 67, 3);
+}
+
+.fa-pen-to-square:hover {
+  color: rgb(207, 230, 9);
+}

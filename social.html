@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud operation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="social.css" />
+  </head>
+  <body>
+    <section>
+      <h2 class="list-title">Create Your Hobby List</h2>
+      <div class="container">
+        <div class="left">
+          <form id="form">
+            <h3>Write Your Favorite Post</h3>
+            <br />
+            <textarea name="" id="input" cols="30" rows="10"></textarea>
+            <br />
+            <br />
+            <div id="err-msg"></div>
+            <br />
+            <button type="submit" id="post-btn">Post</button>
+          </form>
+        </div>
+        <div class="right">
+          <div id="posts">
+            <h3>Your Favorite hobbies</h3>
+            <div>
+              <p>Playing Crick</p>
+              <span class="option">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <i
+                  onClick="deletePost(this)"
+                  class="fa-sharp fa-solid fa-trash"
+                ></i>
+              </span>
+            </div>
+            <div>
+              <p>Scrolling Facebook</p>
+              <span class="option">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <i
+                  onClick="deletePost(this)"
+                  class="fa-sharp fa-solid fa-trash"
+                ></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- js link -->
+    <script src="./social.js"></script>
+  </body>
+</html>
